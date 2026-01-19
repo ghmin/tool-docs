@@ -1,6 +1,6 @@
 - SSL域名证书
 
-    - [工具篇](quickstart.md)
+    - [SSL认知篇](books/01-SSL/README.md)
     - [nginx篇](books/01-SSL/nginx-rel.md)
     - [Writing more pages](more-pages.md)
     - [Custom navbar](custom-navbar.md)
