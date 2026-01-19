@@ -1,24 +1,43 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta charset="UTF-8" />
-    <link
-            rel="stylesheet"
-            href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
-    />
+    <meta charset="UTF-8">
+    <title>@太白 知识库</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/vue.css">
+    <link rel="stylesheet" href="/static/sidebar-folder.min.css" />
+    <style>
+        body, .markdown-section, .sidebar { font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif !important; }
+        mjx-container { outline: 0 !important; }
+    </style>
 </head>
-<title>@太白 文档</title>
 <body>
-<div id="app"></div>
+<div id="app">Loading...</div>
 <script>
-    window.$docsify = {
-        //...
+    window.docsify = {
+        name: 'Knowledge Base',
+        loadSidebar: true,
+        subMaxLevel: 2,
+        homepage: 'README.md',
+        auto2top: true,
+        sidebarDisplayLevel: 0,
+        search: { placeholder: 'Type to search', noData: 'No Results', depth: 6 },
+        latex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }
+    }
+</script>
+<script>
+    window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], tags: 'ams' },
+        chtml: { fontURL: '/static/output/chtml/fonts/woff-v2' },
+        startup: { ready: () => { MathJax.startup.defaultReady(); } }
     };
 </script>
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="/static/docsify.min.js"></script>
+<script src="/static/tex-mml-chtml.js"></script>
+<script src="/static/docsify-latex.min.js"></script>
+<script src="/static/docsify-sidebar-collapse.min.js"></script>
+<script src="/static/docsify-pagination.min.js"></script>
+<script src="/static/search.min.js"></script>
+<script src="/static/zoom-image.min.js"></script>
 </body>
 </html>
