@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="static/vue.css">
     <link rel="stylesheet" href="static/sidebar-folder.min.css" />
     <style>
-        body, .markdown-section, .sidebar { font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif !important; }
+        body, .markdown-section,
+        .sidebar { font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif !important; }
         mjx-container { outline: 0 !important; }
     </style>
 </head>
@@ -20,14 +21,15 @@
         subMaxLevel: 2,
         homepage: 'README.md',
         auto2top: true,
-        sidebarDisplayLevel: 0,
+        sidebarDisplayLevel: 2,
         search: { placeholder: 'Type to search', noData: 'No Results', depth: 6 },
         latex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }
     }
 </script>
 <script>
     window.MathJax = {
-        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], tags: 'ams' },
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']], tags: 'ams' },
         chtml: { fontURL: 'static/output/chtml/fonts/woff-v2' },
         startup: { ready: () => { MathJax.startup.defaultReady(); } }
     };
