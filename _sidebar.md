@@ -1,7 +1,7 @@
 - SSL域名证书
 
     - [SSL认知篇](books/01-SSL/README.md)
-    - [nginx篇](books/01-SSL/nginx-rel.md)
+    - [nginx部署篇](books/01-SSL/nginx-rel.md)
     - [Writing more pages](more-pages.md)
     - [Custom navbar](custom-navbar.md)
     - [Cover page](cover.md)
