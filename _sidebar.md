@@ -4,7 +4,7 @@
     - [nginx部署篇](books/01-SSL/nginx-rel.md)
     - [Writing more pages](more-pages.md)
     - [Custom navbar](custom-navbar.md)
-    - [Cover page](cover.md)
+    - [内网自签名以及CA机构信任](books/01-SSL/sign-self.md)
 
 - Customization
 
