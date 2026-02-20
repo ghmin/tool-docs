@@ -6,9 +6,9 @@
     - [Custom navbar](custom-navbar.md)
     - [内网自签名以及CA机构信任](books/01-SSL/sign-self.md)
 
-- Customization
+- 网络WEBRTC直播
 
-    - [Configuration](configuration.md)
+    - [stun turn 服务器部署](books/03-webrtc/coturn.md)
     - [Themes](themes.md)
     - [List of Plugins](plugins.md)
     - [Write a Plugin](write-a-plugin.md)
