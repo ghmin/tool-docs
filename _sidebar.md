@@ -10,6 +10,7 @@
 
     - [stun turn 服务器部署](books/03-webrtc/coturn.md)
     - [SFU 服务器部署](books/03-webrtc/liveKit.md)
+    - [IM 服务器部署](books/03-webrtc/tinode.md)
     - [Themes](themes.md)
     - [List of Plugins](plugins.md)
     - [Write a Plugin](write-a-plugin.md)
